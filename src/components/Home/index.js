@@ -348,7 +348,7 @@ class Home extends Component {
         </div>
         {showSearchSuggestions && (
           <ul
-            testid="searchResultsUnorderedList"
+            id="searchResultsUnorderedList"
             className="search-recommendation-list"
           >
             {updatedFilteredStates.map(eachState => (
@@ -384,10 +384,7 @@ class Home extends Component {
                 component without using map() method. */}{' '}
               </div>
 
-              <div
-                className="state-wise-records"
-                testid="stateWiseCovidDataTable"
-              >
+              <div className="state-wise-records" id="stateWiseCovidDataTable">
                 <div className="state-wise-total-table-record">
                   <div className="total-record">
                     <div className="table-head">
@@ -396,7 +393,7 @@ class Home extends Component {
                         <button
                           type="button"
                           className="sort-icon"
-                          testid="ascendingSort"
+                          id="ascendingSort"
                           onClick={this.sortAscending}
                         >
                           <FcGenericSortingAsc />
@@ -404,7 +401,7 @@ class Home extends Component {
                         <button
                           type="button"
                           className="sort-icon"
-                          testid="descendingSort"
+                          id="descendingSort"
                           onClick={this.sortDescending}
                         >
                           <FcGenericSortingDesc />
@@ -462,7 +459,7 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="homeRouteLoader" className="covid-loader-container">
+    <div id="homeRouteLoader" className="covid-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )

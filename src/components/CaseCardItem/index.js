@@ -44,7 +44,7 @@ const CaseCardItem = props => {
   return (
     <ul className="diff-type-cases">
       <li
-        testid="stateSpecificConfirmedCasesContainer"
+        id="stateSpecificConfirmedCasesContainer"
         onClick={onClickConfirmed}
         className={`country-wide confirmed ${activeConfirmedClass}`}
         // className="country-wide confirmed "
@@ -57,7 +57,7 @@ const CaseCardItem = props => {
         <p className="case-count confirmed">{confirmed}</p>
       </li>
       <li
-        testid="stateSpecificActiveCasesContainer"
+        id="stateSpecificActiveCasesContainer"
         onClick={onClickActive}
         className={`country-wide active ${activeActiveClass}`}
         // className="country-wide active"
@@ -70,7 +70,7 @@ const CaseCardItem = props => {
         <p className="case-count active">{active}</p>
       </li>
       <li
-        testid="stateSpecificRecoveredCasesContainer"
+        id="stateSpecificRecoveredCasesContainer"
         onClick={onClickRecovered}
         className={`country-wide recovered ${activeRecoveredClass}`}
         // className="country-wide recovered"
@@ -84,7 +84,7 @@ const CaseCardItem = props => {
       </li>
 
       <li
-        testid="stateSpecificDeceasedCasesContainer"
+        id="stateSpecificDeceasedCasesContainer"
         onClick={onClickDeceased}
         className={`country-wide deceased ${activeDeceasedClass}`}
         // className="country-wide deceased"

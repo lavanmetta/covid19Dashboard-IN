@@ -410,7 +410,7 @@ class StateSpecificDetails extends Component {
           Top Districts
         </h1>
 
-        <ul className="districts-data-list" testid="topDistrictsUnorderedList">
+        <ul className="districts-data-list" id="topDistrictsUnorderedList">
           {districtDataList.map(eachState => (
             <DistrictItem
               key={eachState.districtName}
@@ -430,7 +430,7 @@ class StateSpecificDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="covid-loader-container" testid="stateDetailsLoader">
+    <div className="covid-loader-container" id="stateDetailsLoader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )

@@ -24,7 +24,7 @@ const HomeCaseCardItem = props => {
   return (
     <>
       <div
-        testid="countryWideConfirmedCases"
+        id="countryWideConfirmedCases"
         className={`home-country-wide confirmed ${activeConfirmedClass}`}
       >
         <p className="case-card-heading">Confirmed</p>
@@ -35,7 +35,7 @@ const HomeCaseCardItem = props => {
         <p className="case-count confirmed">{confirmed}</p>
       </div>
       <div
-        testid="countryWideActiveCases"
+        id="countryWideActiveCases"
         className={`home-country-wide active ${activeActiveClass}`}
       >
         <p className="case-card-heading">Active</p>
@@ -46,7 +46,7 @@ const HomeCaseCardItem = props => {
         <p className="case-count">{active}</p>
       </div>
       <div
-        testid="countryWideRecoveredCases"
+        id="countryWideRecoveredCases"
         // onClick={onClickRecovered}
         className={`home-country-wide recovered ${activeRecoveredClass}`}
         // className="country-wide recovered"
@@ -60,7 +60,7 @@ const HomeCaseCardItem = props => {
       </div>
 
       <div
-        testid="countryWideDeceasedCases"
+        id="countryWideDeceasedCases"
         // onClick={onClickDeceased}
         className={`home-country-wide deceased ${activeDeceasedClass}`}
         // className="country-wide deceased"
